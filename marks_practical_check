@@ -1,1 +1,39 @@
+#include <stdio.h>
+void main()
+{
+    printf("**Welcome To ISBM COE , Check Your Result**\n");
+    printf("Enter Your Marks Of All Subject As Following ");
+    int FPL,EG,CHEM,BEE,M1 ;
+    printf("\nENTER MARKS OF FPL:: ");
+    scanf("%d",&FPL);
+    printf("ENTER MARKS OF EG:: ");
+    scanf("%d",&EG);
+    printf("ENTER MARKS OF CHEMISTRY:: ");
+    scanf("%d",&CHEM);
+    printf("ENTER MARKS OF BEE:: ");
+    scanf("%d",&BEE);
+    printf("ENTER MARKS OF MATH:: ");
+    scanf("%d",&M1);
+    if (FPL >= 0 && FPL <= 100 &&EG >= 0 && EG <= 100 &&CHEM >= 0 && CHEM <= 100 &&BEE >= 0 && BEE <= 100 &&M1 >= 0 && M1 <= 100)
+    {
+        if ( FPL >= 40 && EG >= 40 && CHEM >= 40 && BEE >= 40 && M1 >= 40 )
+        {
+           int avg ;
+            avg = (EG + FPL +CHEM +BEE + M1)/5 ;
+            if (avg >= 75)
+                printf("\n  Your Result Is :: DISTINCTION CLASS ");
+            else if (avg>=60)
+                printf("\n  Your Result Is :: FIRST CLASS ");
+            else if (avg >=50)
+                printf("\n  Your Result Is :: SECOND CLASS");
+            else 
+                printf("\n  Your Result Is :: PASS CLASS");
+        }
+        else 
+            printf("\n  Your Result Is :: FAIL");
+    }
+    else
+        printf("\n  Enter A Valid Marks ");
+ printf("\n\nTHANK YOU FOR USING OUR TOOL");
+}
 
